@@ -27,6 +27,14 @@ p {
 	margin-bottom: 0.5%;
 	text-align: center;
 }
+ul#menu li {
+	display: inline;
+	background-color: white;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	border-radius: 10px;
+}
 h6 {
 	text-align: center;
 	color: red;
@@ -36,6 +44,18 @@ h6 {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	margin-top: 25.25%;
+	margin-top: 22.5%;
+	margin-bottom: 0px
+ }
+h6#videos {
+	text-align: center;
+	color: red;
+	background-color: white;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin-top: 21.5%;
 	margin-bottom: 0px
  }
