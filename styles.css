@@ -1,0 +1,16 @@
+html {
+	background-color: rgb(200,200,200)
+	color: rgb(200,0,0);
+}
+h1 {
+	font-family: harlow-solid;
+	text-align: center;
+	border-style: 5px solid;
+	border-radius: 0px 0px 10px 10px;
+	border-color: white;
+	background-color: white; 
+}
+h6 {
+	text-align: center;
+	color: red
+}
