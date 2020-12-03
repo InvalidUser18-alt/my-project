@@ -28,6 +28,7 @@ p {
 	text-align: center;
 }
 ul#menu li {
+	font-family: "Cooper";
 	display: inline;
 	background-color: white;
 	border-style: solid;
@@ -44,7 +45,7 @@ h6 {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	margin-top: 16.75%;
+	margin-top: 17.5%;
 	margin-bottom: 0px;
  }
 h6#videos {
@@ -103,3 +104,26 @@ h6#contact {
 	margin-top: 18.1%;
 	margin-bottom: 0px;
  }
+/* unvisited link */
+a:link {
+	color: red;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color: rgb(150,0,0);
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+	color: rgb(200,0,0);
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+	color: rgb(255,175,175);
+	text-decoration: none;
+}
