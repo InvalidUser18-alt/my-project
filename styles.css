@@ -80,14 +80,6 @@ p#videos {
 	margin-bottom: 0px;
 	text-align: center;
 }
-ul#menua li {
-	display: inline;
-	background-color: white;
-	border-style: solid;
-	border-width: 5px;
-	border-color: white;
-	border-radius: 10px;
-}
 h6#about {
 	text-align: center;
 	color: red;
