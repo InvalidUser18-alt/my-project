@@ -26,6 +26,7 @@ p {
 	margin-top: 0.5%;
 	margin-bottom: 0.5%;
 	text-align: center;
+	overflow: auto;
 }
 ul#menu li {
 	font-family: "Cooper";
@@ -79,6 +80,7 @@ p#videos {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	text-align: center;
+	overflow: auto;
 }
 h6#about {
 	text-align: center;
