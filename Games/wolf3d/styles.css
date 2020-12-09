@@ -931,3 +931,13 @@ a:active {
 	color: rgb(255,175,175);
 	text-decoration: none;
 }
+
+ul#pagenavmenu li {
+	font-family: "Cooper";
+	display: inline;
+	background-color: white;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	border-radius: 10px;
+}
