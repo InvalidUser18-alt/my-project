@@ -3,6 +3,10 @@ body {
 	margin: 0px;
 	overflow-y: hidden;
  }
+body#games {
+	background-color: rgb(200,200,200);
+	margin: 0px;
+ }
 h1 {
 	color: red;
 	font-family: "Harlow Solid";
@@ -104,6 +108,18 @@ h6#contact {
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
 	margin-top: 18.1%;
+	margin-bottom: 0px;
+ }
+h6#games {
+	text-align: center;
+	color: red;
+	background-color: white;
+	border-style: solid;
+	border-width: 5px;
+	border-color: white;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	margin-top: 23.05%;
 	margin-bottom: 0px;
  }
 /* unvisited link */

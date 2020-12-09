@@ -908,3 +908,26 @@ body {
     background-position : 0 100px;
 }
 
+/* unvisited link */
+a:link {
+	color: red;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+	color: rgb(150,0,0);
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+	color: rgb(200,0,0);
+	text-decoration: none;
+}
+
+/* selected link */
+a:active {
+	color: rgb(255,175,175);
+	text-decoration: none;
+}
