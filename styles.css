@@ -9,7 +9,7 @@ body#games {
  }
 h1 {
 	color: red;
-	font-family: "Harlow Solid";
+	font-family: "Harlow Solid", Forte;
 	margin: 0px;
 	text-align: center;
 	background-color: white;
@@ -33,7 +33,7 @@ p {
 	overflow: auto;
 }
 ul#menu li {
-	font-family: "Cooper";
+	font-family: Cooper, Impact;
 	display: inline;
 	background-color: white;
 	border-style: solid;

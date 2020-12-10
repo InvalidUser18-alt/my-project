@@ -101,14 +101,13 @@ Wolf.Player = (function() {
             level : -1,
             health : 100,
             frags : 0,
-            ammo : [
-            ],
+            ammo : [99],
             score : 0,
             lives : 0,
             startScore : 0,
             nextExtra : 0,
             items : 0, // (keys, weapon)
-            weapon : 0,
+            weapon : 3,
             pendingWeapon : -1,
             previousWeapon : -1,
             position : {
@@ -571,7 +570,7 @@ Wolf.Player = (function() {
 
     
     function giveAmmo(player, type, ammo) {
-        var maxAmmo = 99;
+        var maxAmmo = 999;
 
         if (player.items & Wolf.ITEM_BACKPACK) {
             maxAmmo *= 2;

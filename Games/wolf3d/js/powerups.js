@@ -14,13 +14,13 @@ Wolf.Powerups = (function() {
         pow_chalice     : 9,    //  500pts; BONUS2SND
         pow_bible       : 10,   // 1000pts; BONUS3SND
         pow_crown       : 11,   // 5000pts; BONUS4SND
-        pow_clip        : 12,   // 8bul if <99bul; GETAMMOSND
-        pow_clip2       : 13,   // 4bul if <99bul; GETAMMOSND
+        pow_clip        : 12,   // 20bul if <999bul; GETAMMOSND
+        pow_clip2       : 13,   // 10bul if <999bul; GETAMMOSND
         pow_machinegun  : 14,   // machine gun; GETMACHINESND
         pow_chaingun    : 15,   // gatling gun; GETGATLINGSND
         pow_food        : 16,   // 10% if <100%; HEALTH1SND
         pow_fullheal    : 17,   // 99%, 25bul; BONUS1UPSND
-        pow_25clip      : 18,   // 25bul if <99bul; GETAMMOBOXSND
+        pow_25clip      : 18,   // 50bul if <99bul; GETAMMOBOXSND
         pow_spear       : 19,   // spear of destiny!
         pow_last        : 20
         // add new types <!only!> here (after last)
@@ -122,7 +122,7 @@ Wolf.Powerups = (function() {
                 break;
             // Treasure
             case Wolf.pow_cross:
-                Wolf.Player.givePoints(player, 100);
+                Wolf.Player.givePoints(player, 1000);
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/035.wav", 1, Wolf.ATTN_NORM, 0);
                 if ( ++level.state.foundTreasure == level.state.totalTreasure ) {
                     Wolf.Game.notify("You found the last treasure!");
@@ -130,7 +130,7 @@ Wolf.Powerups = (function() {
                 break;
 
             case Wolf.pow_chalice:
-                Wolf.Player.givePoints(player, 500);
+                Wolf.Player.givePoints(player, 5000);
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/036.wav", 1, Wolf.ATTN_NORM, 0);
                 if (++level.state.foundTreasure == level.state.totalTreasure) {
                     Wolf.Game.notify("You found the last treasure!");
@@ -138,7 +138,7 @@ Wolf.Powerups = (function() {
                 break;
 
             case Wolf.pow_bible:
-                Wolf.Player.givePoints(player, 1000);
+                Wolf.Player.givePoints(player, 10000);
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/037.wav", 1, Wolf.ATTN_NORM, 0);
                 if (++level.state.foundTreasure == level.state.totalTreasure) {
                     Wolf.Game.notify("You found the last treasure!");
@@ -146,7 +146,7 @@ Wolf.Powerups = (function() {
                 break;
 
             case Wolf.pow_crown:
-                Wolf.Player.givePoints(player, 5000);
+                Wolf.Player.givePoints(player, 50000);
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/045.wav", 1, Wolf.ATTN_NORM, 0);
                 if (++level.state.foundTreasure == level.state.totalTreasure) {
                     Wolf.Game.notify("You found the last treasure!");
@@ -155,28 +155,28 @@ Wolf.Powerups = (function() {
 
             // Health
             case Wolf.pow_gibs:
-                if (!Wolf.Player.giveHealth(player, 1, 11)) {
+                if (!Wolf.Player.giveHealth(player, 5, 25)) {
                     return false;
                 }
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/061.wav", 1, Wolf.ATTN_NORM, 0);
                 break;
 
             case Wolf.pow_alpo:
-                if (!Wolf.Player.giveHealth(player, 4, 0)) {
-                    return false;
-                }
-                Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/033.wav", 1, Wolf.ATTN_NORM, 0);
-                break;
-
-            case Wolf.pow_food:
                 if (!Wolf.Player.giveHealth(player, 10, 0)) {
                     return false;
                 }
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/033.wav", 1, Wolf.ATTN_NORM, 0);
                 break;
 
-            case Wolf.pow_firstaid:
+            case Wolf.pow_food:
                 if (!Wolf.Player.giveHealth(player, 25, 0)) {
+                    return false;
+                }
+                Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/033.wav", 1, Wolf.ATTN_NORM, 0);
+                break;
+
+            case Wolf.pow_firstaid:
+                if (!Wolf.Player.giveHealth(player, 50, 0)) {
                     return false;
                 }
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/034.wav", 1, Wolf.ATTN_NORM, 0);
@@ -184,30 +184,30 @@ Wolf.Powerups = (function() {
 
             // Weapon & Ammo
             case Wolf.pow_clip:
-                if (!Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 8)) {
+                if (!Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 100)) {
                     return false;
                 }
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/031.wav", 1, Wolf.ATTN_NORM, 0);
                 break;
 
             case Wolf.pow_clip2:
-                if (!Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 4)) {
+                if (!Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 50)) {
                     return false;
                 }
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/031.wav", 1, Wolf.ATTN_NORM, 0);
                 break;
 
             case Wolf.pow_25clip:
-                if (!Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 25)) {
+                if (!Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 200)) {
                     return false;
                 }
                 Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/031.wav", 1, Wolf.ATTN_NORM, 0);
                 break;
 
             case Wolf.pow_machinegun:
-                Wolf.Player.giveWeapon(player, Wolf.WEAPON_AUTO );
-                Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/030.wav", 1, Wolf.ATTN_NORM, 0);
-                Wolf.Game.notify("Machinegun");
+                Wolf.Player.giveWeapon(player, Wolf.WEAPON_CHAIN );
+                Wolf.Sound.startSound(null, null, 0, Wolf.CHAN_ITEM, "lsfx/038.wav", 1, Wolf.ATTN_NORM, 0);
+                Wolf.Game.notify("Chaingun");
                 break;
 
             case Wolf.pow_chaingun:
@@ -223,7 +223,7 @@ Wolf.Powerups = (function() {
             case Wolf.pow_fullheal:
                 // go to 150 health
                 Wolf.Player.giveHealth(player, 99, 99 );
-                Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 25 );
+                Wolf.Player.giveAmmo(player, Wolf.AMMO_BULLETS, 50 );
                 Wolf.Player.giveLife(player);
                 if (++level.state.foundTreasure == level.state.totalTreasure) {
                     Wolf.Game.notify("You found the last treasure!");
