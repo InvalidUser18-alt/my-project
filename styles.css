@@ -3,10 +3,6 @@ body {
 	margin: 0px;
 	overflow-y: hidden;
  }
-body#games {
-	background-color: rgb(200,200,200);
-	margin: 0px;
- }
 h1 {
 	color: red;
 	font-family: "Harlow Solid", Forte, "Script MJ";
