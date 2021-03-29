@@ -196,25 +196,25 @@ h3 {
 	overflow: auto;
 }
 /* unvisited link */
-a:link #disabled {
+#disabled a:link {
 	color: gray;
 	text-decoration: none;
 }
 
 /* visited link */
-a:visited #disabled {
+#disabled a:visited {
 	color: rgb(150,150,150);
 	text-decoration: none;
 }
 
 /* mouse over link */
-a:hover #disabled {
+#disabled a:hover {
 	color: rgb(200,200,200);
 	text-decoration: none;
 }
 
 /* selected link */
-a:active #disabled{
+#disabled a:active {
 	color: rgb(175,175,175);
 	text-decoration: none;
 }
