@@ -62,7 +62,7 @@ h6#videos {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 99%;
+	width: auto;
 	margin: 0px;
  }
 iframe {
@@ -98,7 +98,7 @@ h6#about {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 99%;
+	width: auto;
 	margin: 0px;
  }
 h6#contact {
@@ -112,7 +112,7 @@ h6#contact {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 99%;
+	width: auto;
 	margin: 0px;
  }
 h6#games {
@@ -126,7 +126,7 @@ h6#games {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 99%;
+	width: auto;
 	margin: 0px;
  }
 /* unvisited link */
@@ -196,25 +196,25 @@ h3 {
 	overflow: auto;
 }
 /* unvisited link */
-#disabled a:link {
+#disabled:link {
 	color: gray;
 	text-decoration: none;
 }
 
 /* visited link */
-#disabled a:visited {
+#disabled:visited {
 	color: rgb(150,150,150);
 	text-decoration: none;
 }
 
 /* mouse over link */
-#disabled a:hover {
+#disabled:hover {
 	color: rgb(200,200,200);
 	text-decoration: none;
 }
 
 /* selected link */
-#disabled a:active {
+#disabled:active {
 	color: rgb(175,175,175);
 	text-decoration: none;
 }
