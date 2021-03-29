@@ -38,16 +38,18 @@ ul#menu li {
 	border-radius: 10px;
 }
 h6 {
-	color: red;
-	font-family: "Harlow Solid", "Forte", "Script MJ";
-	margin: 0px;
 	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	color: red;
 	background-color: white;
 	border-style: solid;
 	border-width: 5px;
-	border-color: rgb(255,255,255);
-	border-bottom-right-radius: 10px;
-	border-bottom-left-radius: 10px;
+	border-color: white;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	width: 100%;
+	margin: 0px;
  }
 h6#videos {
 	text-align: center;
