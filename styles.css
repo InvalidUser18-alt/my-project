@@ -48,7 +48,7 @@ h6 {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 100%;
+	width: 99.75%;
 	margin: 0px;
  }
 h6#videos {
@@ -62,7 +62,7 @@ h6#videos {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 100%;
+	width: 100% - 5px;
 	margin: 0px;
  }
 iframe {
@@ -98,7 +98,7 @@ h6#about {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 100%;
+	width: 100% - 5px;
 	margin: 0px;
  }
 h6#contact {
@@ -112,7 +112,7 @@ h6#contact {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 100%;
+	width: 100% - 5px;
 	margin: 0px;
  }
 h6#games {
@@ -126,7 +126,7 @@ h6#games {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 100%;
+	width: 100% - 5px;
 	margin: 0px;
  }
 /* unvisited link */
@@ -164,7 +164,7 @@ h6#memes {
 	border-color: white;
 	border-top-right-radius: 10px;
 	border-top-left-radius: 10px;
-	width: 100%;
+	width: 100% - 5px;
 	margin: 0px;
  }
 h2 {
