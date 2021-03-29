@@ -195,3 +195,26 @@ h3 {
 	text-align: center;
 	overflow: auto;
 }
+/* unvisited link */
+a:link #disabled {
+	color: gray;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited #disabled {
+	color: rgb(150,150,150);
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover #disabled {
+	color: rgb(200,200,200);
+	text-decoration: none;
+}
+
+/* selected link */
+a:active #disabled{
+	color: rgb(175,175,175);
+	text-decoration: none;
+}
