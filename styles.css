@@ -68,6 +68,8 @@ h6#videos {
 iframe {
 	display: block;
 	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
 	border-style: solid;
 	border-width: 5px;
 	border-color: white;
