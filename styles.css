@@ -28,7 +28,7 @@ p {
 	text-align: center;
 	overflow: auto;
 }
-ul#menu li {
+li {
 	font-family: "Small Fonts", Cooper, Impact;
 	display: inline;
 	background-color: white;
